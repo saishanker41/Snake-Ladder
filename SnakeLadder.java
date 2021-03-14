@@ -4,6 +4,7 @@ public class SnakeLadder {
    public static final int winningPosition = 100;
 	public static void main(String[] args) {
       int dieRoll;
+      int dieRollCount = 0;
       //int currentPosition = 0;
       int playerPosition = 0;
 		//dieRoll = (int)(Math.random()*6) + 1;
@@ -12,6 +13,8 @@ public class SnakeLadder {
       //System.out.println("The die comes up " + dieRoll);
       while (playerPosition < winningPosition)
       {
+          dieRollCount++;
+          System.out.println("Dice count is: " + dieRollCount);
           dieRoll = (int)(Math.random()*6) + 1;
           System.out.println("The die comes up " + dieRoll);
           int option = (int)(Math.random()*3);
