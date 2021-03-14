@@ -26,6 +26,11 @@ public class SnakeLadder {
           {
              System.out.println("Got Ladder");
              playerPosition += dieRoll;
+             if(playerPosition > 100)
+             {
+                   playerPosition = currentPosition;
+             }
+
           }
           else if(option==2)
           {
